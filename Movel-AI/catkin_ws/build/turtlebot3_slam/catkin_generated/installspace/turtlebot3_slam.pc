@@ -1,8 +1,0 @@
-prefix=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/install
-
-Name: turtlebot3_slam
-Description: Description of turtlebot3_slam
-Version: 1.2.4
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: roscpp sensor_msgs
