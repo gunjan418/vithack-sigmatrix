@@ -36,3 +36,6 @@ dwa-local-planner
 
 
 sudo apt install ros-noetic-<package-name>
+
+
+Change the amcl configuration vithack-sigmatix/Movel-AI/catkin_ws/src/turtlebot3_navigation/launch/amcl.launch initial_pose_x, initial_pose_y and initial_pose_a to match house.lauch
