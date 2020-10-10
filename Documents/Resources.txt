@@ -1,2 +1,9 @@
 Resources:
 https://drive.google.com/drive/folders/1tTKkuascYyuwIZjYZztn76XBKIvxPCyZ
+
+
+    <include>
+      <uri>/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/docking_station</uri>
+      <static>true</static>
+      <pose>-0.18 1 0.06 0 0 0</pose>
+    </include>
