@@ -25,3 +25,14 @@ start localization
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=map_file_name.yaml
 
 
+Run bot on Mapped Rviz:
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/my_map_full.yaml
+
+Packages to install extra:
+slam-gmapping
+amcl
+move-base
+dwa-local-planner
+
+
+sudo apt install ros-noetic-<package-name>
