@@ -1,19 +1,25 @@
 source devel/setup.bash
 
+
 open gazebo sim:
 roslaunch turtlebot3_gazebo turtlebot3_house.launch
 
-create map of the house
-roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
-
-save map
-rosrun map_server map_saver -f map_file_name
 
 move the bot
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
+
+create map of the house
+roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+
+
+save map
+rosrun map_server map_saver -f map_file_name
+
+
 Localization
 roslaunch turtlebot3_gazebo turtlebot3_house.launch
+
 
 start localization
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=map_file_name.yaml
