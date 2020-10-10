@@ -7,3 +7,5 @@ https://drive.google.com/drive/folders/1tTKkuascYyuwIZjYZztn76XBKIvxPCyZ
       <static>true</static>
       <pose>-0.18 1 0.06 0 0 0</pose>
     </include>
+
+    https://emanual.robotis.com/docs/en/platform/turtlebot3/export_turtlebot3_model/
