@@ -79,6 +79,7 @@ if __name__ == '__main__':
         rospy.init_node('nav_test', anonymous=False)
         navigator = GoToPose()
 
+
         # Customize the following values so they are appropriate for your location
         position = {'x': 5.4, 'y' : -2.6}
         quaternion = {'r1' : 0.000, 'r2' : 0.000, 'r3' : 0.000, 'r4' : 1.000}
