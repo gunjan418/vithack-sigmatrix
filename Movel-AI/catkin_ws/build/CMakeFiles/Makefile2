@@ -54,10 +54,14 @@ CMAKE_BINARY_DIR = /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin
 
 # The main recursive "all" target.
 all: gtest/all
+all: speech/hlpr_speech/hlpr_speech_msgs/all
+all: speech/hlpr_speech/hlpr_speech_synthesis/all
 all: turtlebot3/all
 all: turtlebot3_msgs/all
 all: turtlebot3_navigation/all
 all: turtlebot3_simulations/turtlebot3_simulations/all
+all: speech/hlpr_speech/hlpr_speech/all
+all: speech/hlpr_speech/hlpr_speech_recognition/all
 all: turtlebot3_bringup/all
 all: turtlebot3_example/all
 all: turtlebot3_simulations/turtlebot3_fake/all
@@ -70,10 +74,14 @@ all: turtlebot3_description/all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
+preinstall: speech/hlpr_speech/hlpr_speech_msgs/preinstall
+preinstall: speech/hlpr_speech/hlpr_speech_synthesis/preinstall
 preinstall: turtlebot3/preinstall
 preinstall: turtlebot3_msgs/preinstall
 preinstall: turtlebot3_navigation/preinstall
 preinstall: turtlebot3_simulations/turtlebot3_simulations/preinstall
+preinstall: speech/hlpr_speech/hlpr_speech/preinstall
+preinstall: speech/hlpr_speech/hlpr_speech_recognition/preinstall
 preinstall: turtlebot3_bringup/preinstall
 preinstall: turtlebot3_example/preinstall
 preinstall: turtlebot3_simulations/turtlebot3_fake/preinstall
@@ -91,10 +99,14 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
+clean: speech/hlpr_speech/hlpr_speech_msgs/clean
+clean: speech/hlpr_speech/hlpr_speech_synthesis/clean
 clean: turtlebot3/clean
 clean: turtlebot3_msgs/clean
 clean: turtlebot3_navigation/clean
 clean: turtlebot3_simulations/turtlebot3_simulations/clean
+clean: speech/hlpr_speech/hlpr_speech/clean
+clean: speech/hlpr_speech/hlpr_speech_recognition/clean
 clean: turtlebot3_bringup/clean
 clean: turtlebot3_example/clean
 clean: turtlebot3_simulations/turtlebot3_fake/clean
@@ -163,6 +175,96 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googletest/clean
 
 #=============================================================================
+# Directory level rules for directory speech/hlpr_speech/hlpr_speech
+
+# Recursive "all" directory target.
+speech/hlpr_speech/hlpr_speech/all:
+
+.PHONY : speech/hlpr_speech/hlpr_speech/all
+
+# Recursive "preinstall" directory target.
+speech/hlpr_speech/hlpr_speech/preinstall:
+
+.PHONY : speech/hlpr_speech/hlpr_speech/preinstall
+
+# Recursive "clean" directory target.
+speech/hlpr_speech/hlpr_speech/clean:
+
+.PHONY : speech/hlpr_speech/hlpr_speech/clean
+
+#=============================================================================
+# Directory level rules for directory speech/hlpr_speech/hlpr_speech_msgs
+
+# Recursive "all" directory target.
+speech/hlpr_speech/hlpr_speech_msgs/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/all
+
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/all
+
+# Recursive "preinstall" directory target.
+speech/hlpr_speech/hlpr_speech_msgs/preinstall:
+
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/preinstall
+
+# Recursive "clean" directory target.
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir/clean
+speech/hlpr_speech/hlpr_speech_msgs/clean: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir/clean
+
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/clean
+
+#=============================================================================
+# Directory level rules for directory speech/hlpr_speech/hlpr_speech_recognition
+
+# Recursive "all" directory target.
+speech/hlpr_speech/hlpr_speech_recognition/all:
+
+.PHONY : speech/hlpr_speech/hlpr_speech_recognition/all
+
+# Recursive "preinstall" directory target.
+speech/hlpr_speech/hlpr_speech_recognition/preinstall:
+
+.PHONY : speech/hlpr_speech/hlpr_speech_recognition/preinstall
+
+# Recursive "clean" directory target.
+speech/hlpr_speech/hlpr_speech_recognition/clean:
+
+.PHONY : speech/hlpr_speech/hlpr_speech_recognition/clean
+
+#=============================================================================
+# Directory level rules for directory speech/hlpr_speech/hlpr_speech_synthesis
+
+# Recursive "all" directory target.
+speech/hlpr_speech/hlpr_speech_synthesis/all:
+
+.PHONY : speech/hlpr_speech/hlpr_speech_synthesis/all
+
+# Recursive "preinstall" directory target.
+speech/hlpr_speech/hlpr_speech_synthesis/preinstall:
+
+.PHONY : speech/hlpr_speech/hlpr_speech_synthesis/preinstall
+
+# Recursive "clean" directory target.
+speech/hlpr_speech/hlpr_speech_synthesis/clean: speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+.PHONY : speech/hlpr_speech/hlpr_speech_synthesis/clean
+
+#=============================================================================
 # Directory level rules for directory turtlebot3
 
 # Recursive "all" directory target.
@@ -176,7 +278,7 @@ turtlebot3/preinstall:
 .PHONY : turtlebot3/preinstall
 
 # Recursive "clean" directory target.
-turtlebot3/clean: turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir/clean
+turtlebot3/clean:
 
 .PHONY : turtlebot3/clean
 
@@ -316,24 +418,19 @@ turtlebot3_msgs/preinstall:
 
 # Recursive "clean" directory target.
 turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genpy.dir/clean
-turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/clean
-turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/clean
-turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/clean
-turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/clean
-turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/clean
-turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/clean
-turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/clean
 turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_gennodejs.dir/clean
 turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_VersionInfo.dir/clean
-turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/clean
-turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_geneus.dir/clean
+turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/clean
 turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_Sound.dir/clean
+turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/clean
 turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_gencpp.dir/clean
+turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/clean
+turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/clean
+turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/clean
+turtlebot3_msgs/clean: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/clean
 
 .PHONY : turtlebot3_msgs/clean
 
@@ -717,31 +814,563 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir
 
 # All Build rule for target.
-turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir/build.make turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir/build.make turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
-.PHONY : turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/all
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target hlpr_speech_msgs_genpy"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir/all
 
 # Build rule for subdir invocation for target.
-turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-.PHONY : turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir/rule
 
 # Convenience name for target.
-_catkin_empty_exported_target: turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir/rule
+hlpr_speech_msgs_genpy: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir/rule
+
+.PHONY : hlpr_speech_msgs_genpy
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genpy.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target hlpr_speech_msgs_gennodejs"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir/rule
+
+# Convenience name for target.
+hlpr_speech_msgs_gennodejs: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir/rule
+
+.PHONY : hlpr_speech_msgs_gennodejs
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gennodejs.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/all
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=21,22,23 "Built target hlpr_speech_msgs_generate_messages_nodejs"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+hlpr_speech_msgs_generate_messages_nodejs: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : hlpr_speech_msgs_generate_messages_nodejs
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/all
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=18,19,20 "Built target hlpr_speech_msgs_generate_messages_lisp"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+hlpr_speech_msgs_generate_messages_lisp: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : hlpr_speech_msgs_generate_messages_lisp
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_eus: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+.PHONY : std_msgs_generate_messages_eus
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : std_msgs_generate_messages_lisp
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_nodejs: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_msgs_generate_messages_nodejs
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target hlpr_speech_msgs_genlisp"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir/rule
+
+# Convenience name for target.
+hlpr_speech_msgs_genlisp: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir/rule
+
+.PHONY : hlpr_speech_msgs_genlisp
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_genlisp.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/all:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target _hlpr_speech_msgs_generate_messages_check_deps_StampedString"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/rule
+
+# Convenience name for target.
+_hlpr_speech_msgs_generate_messages_check_deps_StampedString: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/rule
+
+.PHONY : _hlpr_speech_msgs_generate_messages_check_deps_StampedString
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/all
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target hlpr_speech_msgs_generate_messages"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 18
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/rule
+
+# Convenience name for target.
+hlpr_speech_msgs_generate_messages: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/rule
+
+.PHONY : hlpr_speech_msgs_generate_messages
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/all
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=11,12,13 "Built target hlpr_speech_msgs_generate_messages_cpp"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+hlpr_speech_msgs_generate_messages_cpp: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : hlpr_speech_msgs_generate_messages_cpp
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : std_msgs_generate_messages_cpp
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/all:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target _hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/rule
+
+# Convenience name for target.
+_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/rule
+
+.PHONY : _hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/all:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target _hlpr_speech_msgs_generate_messages_check_deps_SpeechService"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/rule
+
+# Convenience name for target.
+_hlpr_speech_msgs_generate_messages_check_deps_SpeechService: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/rule
+
+.PHONY : _hlpr_speech_msgs_generate_messages_check_deps_SpeechService
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+.PHONY : std_msgs_generate_messages_py
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/all
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=14,15,16,17 "Built target hlpr_speech_msgs_generate_messages_eus"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+hlpr_speech_msgs_generate_messages_eus: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/rule
+
+.PHONY : hlpr_speech_msgs_generate_messages_eus
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService.dir/all
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=24,25,26,27,28 "Built target hlpr_speech_msgs_generate_messages_py"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+hlpr_speech_msgs_generate_messages_py: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/rule
+
+.PHONY : hlpr_speech_msgs_generate_messages_py
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target hlpr_speech_msgs_gencpp"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir/rule
+
+# Convenience name for target.
+hlpr_speech_msgs_gencpp: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir/rule
+
+.PHONY : hlpr_speech_msgs_gencpp
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_gencpp.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target hlpr_speech_msgs_geneus"
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir/rule
+
+# Convenience name for target.
+hlpr_speech_msgs_geneus: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir/rule
+
+.PHONY : hlpr_speech_msgs_geneus
+
+# clean rule for target.
+speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir/build.make speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_geneus.dir/clean
+
+#=============================================================================
+# Target rules for target speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir
+
+# All Build rule for target.
+speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir/build.make speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir/build.make speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
+.PHONY : speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir/all
+
+# Build rule for subdir invocation for target.
+speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+# Convenience name for target.
+_catkin_empty_exported_target: speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 .PHONY : _catkin_empty_exported_target
 
 # clean rule for target.
-turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir/build.make turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : turtlebot3/CMakeFiles/_catkin_empty_exported_target.dir/clean
+speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir/build.make speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : speech/hlpr_speech/hlpr_speech_synthesis/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 #=============================================================================
 # Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genpy.dir
@@ -771,212 +1400,14 @@ turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genpy.dir/clean:
 .PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genpy.dir/clean
 
 #=============================================================================
-# Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir
-
-# All Build rule for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_VersionInfo.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_Sound.dir/all
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=67,68,69,70 "Built target turtlebot3_msgs_generate_messages_py"
-.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-turtlebot3_msgs_generate_messages_py: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/rule
-
-.PHONY : turtlebot3_msgs_generate_messages_py
-
-# clean rule for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/clean
-.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/clean
-
-#=============================================================================
-# Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir
-
-# All Build rule for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_VersionInfo.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_Sound.dir/all
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=64,65,66 "Built target turtlebot3_msgs_generate_messages_nodejs"
-.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-turtlebot3_msgs_generate_messages_nodejs: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : turtlebot3_msgs_generate_messages_nodejs
-
-# clean rule for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/clean
-.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/clean
-
-#=============================================================================
-# Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir
-
-# All Build rule for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/depend
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target turtlebot3_msgs_genlisp"
-.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/all
-
-# Build rule for subdir invocation for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/rule
-
-# Convenience name for target.
-turtlebot3_msgs_genlisp: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/rule
-
-.PHONY : turtlebot3_msgs_genlisp
-
-# clean rule for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/clean:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/clean
-.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/clean
-
-#=============================================================================
-# Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_VersionInfo.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_Sound.dir/all
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=61,62,63 "Built target turtlebot3_msgs_generate_messages_lisp"
-.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-turtlebot3_msgs_generate_messages_lisp: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : turtlebot3_msgs_generate_messages_lisp
-
-# clean rule for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/clean
-.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/clean
-
-#=============================================================================
-# Target rules for target turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
-.PHONY : turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-.PHONY : turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# clean rule for target.
-turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-
-#=============================================================================
-# Target rules for target turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
-.PHONY : turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-.PHONY : turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# clean rule for target.
-turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-
-#=============================================================================
-# Target rules for target turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir
-
-# All Build rule for target.
-turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build.make turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build.make turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
-.PHONY : turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-.PHONY : turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-.PHONY : std_msgs_generate_messages_py
-
-# clean rule for target.
-turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build.make turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-
-#=============================================================================
 # Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir
 
 # All Build rule for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all
 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/depend
 	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target turtlebot3_msgs_generate_messages"
@@ -998,63 +1429,6 @@ turtlebot3_msgs_generate_messages: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_ge
 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/clean:
 	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/clean
 .PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages.dir/clean
-
-#=============================================================================
-# Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir
-
-# All Build rule for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_VersionInfo.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_Sound.dir/all
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=57,58,59,60 "Built target turtlebot3_msgs_generate_messages_eus"
-.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-turtlebot3_msgs_generate_messages_eus: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/rule
-
-.PHONY : turtlebot3_msgs_generate_messages_eus
-
-# clean rule for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/clean
-.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/clean
-
-#=============================================================================
-# Target rules for target turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir
-
-# All Build rule for target.
-turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/build.make turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/depend
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/build.make turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target _turtlebot3_msgs_generate_messages_check_deps_SensorState"
-.PHONY : turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all
-
-# Build rule for subdir invocation for target.
-turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-.PHONY : turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/rule
-
-# Convenience name for target.
-_turtlebot3_msgs_generate_messages_check_deps_SensorState: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/rule
-
-.PHONY : _turtlebot3_msgs_generate_messages_check_deps_SensorState
-
-# clean rule for target.
-turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/clean:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/build.make turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/clean
-.PHONY : turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/clean
 
 #=============================================================================
 # Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_gennodejs.dir
@@ -1111,43 +1485,16 @@ turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_Version
 .PHONY : turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_VersionInfo.dir/clean
 
 #=============================================================================
-# Target rules for target turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir
-
-# All Build rule for target.
-turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
-.PHONY : turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-.PHONY : turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# clean rule for target.
-turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-.PHONY : turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-
-#=============================================================================
 # Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_VersionInfo.dir/all
 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_Sound.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all
 	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=54,55,56 "Built target turtlebot3_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=72,73,74 "Built target turtlebot3_msgs_generate_messages_cpp"
 .PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1166,33 +1513,6 @@ turtlebot3_msgs_generate_messages_cpp: turtlebot3_msgs/CMakeFiles/turtlebot3_msg
 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/clean:
 	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/clean
 .PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/clean
-
-#=============================================================================
-# Target rules for target turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir
-
-# All Build rule for target.
-turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
-.PHONY : turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
-.PHONY : turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# clean rule for target.
-turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-.PHONY : turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
 # Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_geneus.dir
@@ -1222,6 +1542,36 @@ turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_geneus.dir/clean:
 .PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_geneus.dir/clean
 
 #=============================================================================
+# Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_VersionInfo.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_Sound.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=82,83,84 "Built target turtlebot3_msgs_generate_messages_nodejs"
+.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+turtlebot3_msgs_generate_messages_nodejs: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : turtlebot3_msgs_generate_messages_nodejs
+
+# clean rule for target.
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/clean
+.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
 # Target rules for target turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_Sound.dir
 
 # All Build rule for target.
@@ -1249,6 +1599,36 @@ turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_Sound.d
 .PHONY : turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_Sound.dir/clean
 
 #=============================================================================
+# Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_VersionInfo.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_Sound.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=85,86,87,88 "Built target turtlebot3_msgs_generate_messages_py"
+.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+turtlebot3_msgs_generate_messages_py: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/rule
+
+.PHONY : turtlebot3_msgs_generate_messages_py
+
+# clean rule for target.
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/clean
+.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
 # Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_gencpp.dir
 
 # All Build rule for target.
@@ -1274,6 +1654,120 @@ turtlebot3_msgs_gencpp: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_gencpp.dir/ru
 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_gencpp.dir/clean:
 	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_gencpp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_gencpp.dir/clean
 .PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_gencpp.dir/clean
+
+#=============================================================================
+# Target rules for target turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir
+
+# All Build rule for target.
+turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all:
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/build.make turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/depend
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/build.make turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target _turtlebot3_msgs_generate_messages_check_deps_SensorState"
+.PHONY : turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all
+
+# Build rule for subdir invocation for target.
+turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/rule
+
+# Convenience name for target.
+_turtlebot3_msgs_generate_messages_check_deps_SensorState: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/rule
+
+.PHONY : _turtlebot3_msgs_generate_messages_check_deps_SensorState
+
+# clean rule for target.
+turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/clean:
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/build.make turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/clean
+.PHONY : turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/clean
+
+#=============================================================================
+# Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_VersionInfo.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_Sound.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=75,76,77,78 "Built target turtlebot3_msgs_generate_messages_eus"
+.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+turtlebot3_msgs_generate_messages_eus: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/rule
+
+.PHONY : turtlebot3_msgs_generate_messages_eus
+
+# clean rule for target.
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/clean
+.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_VersionInfo.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_Sound.dir/all
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all: turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_generate_messages_check_deps_SensorState.dir/all
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=79,80,81 "Built target turtlebot3_msgs_generate_messages_lisp"
+.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+turtlebot3_msgs_generate_messages_lisp: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : turtlebot3_msgs_generate_messages_lisp
+
+# clean rule for target.
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/clean
+.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir
+
+# All Build rule for target.
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/depend
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num= "Built target turtlebot3_msgs_genlisp"
+.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles 0
+.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/rule
+
+# Convenience name for target.
+turtlebot3_msgs_genlisp: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/rule
+
+.PHONY : turtlebot3_msgs_genlisp
+
+# clean rule for target.
+turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/clean:
+	$(MAKE) -f turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/build.make turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/clean
+.PHONY : turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_genlisp.dir/clean
 
 #=============================================================================
 # Target rules for target turtlebot3_bringup/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
@@ -1900,16 +2394,16 @@ turtlebot3_bringup/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
 # Target rules for target turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir
 
 # All Build rule for target.
-turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all
-turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all
-turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all
-turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
-turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all
-turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
 turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/all
-turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all
+turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all
+turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all
+turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all
 turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_bringup/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_bringup/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_bringup/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
@@ -1937,7 +2431,7 @@ turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_bringup
 turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all: turtlebot3_bringup/CMakeFiles/roscpp_generate_messages_eus.dir/all
 	$(MAKE) -f turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/build.make turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/depend
 	$(MAKE) -f turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/build.make turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=11,12 "Built target turtlebot3_diagnostics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=29,30 "Built target turtlebot3_diagnostics"
 .PHONY : turtlebot3_bringup/CMakeFiles/turtlebot3_diagnostics.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2042,7 +2536,7 @@ turtlebot3_example/CMakeFiles/turtlebot3_example_genpy.dir/clean:
 # Target rules for target turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_nodejs.dir
 
 # All Build rule for target.
-turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_nodejs.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_nodejs.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_nodejs.dir/all: turtlebot3_bringup/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_nodejs.dir/all: turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Feedback.dir/all
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_nodejs.dir/all: turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Result.dir/all
@@ -2054,7 +2548,7 @@ turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_nodejs.dir/al
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_nodejs.dir/all: turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Action.dir/all
 	$(MAKE) -f turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_nodejs.dir/build.make turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_nodejs.dir/depend
 	$(MAKE) -f turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_nodejs.dir/build.make turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=37,38,39,40,41,42,43 "Built target turtlebot3_example_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=55,56,57,58,59,60,61 "Built target turtlebot3_example_generate_messages_nodejs"
 .PHONY : turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2105,7 +2599,7 @@ turtlebot3_example/CMakeFiles/turtlebot3_example_geneus.dir/clean:
 # Target rules for target turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_eus.dir
 
 # All Build rule for target.
-turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_eus.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_eus.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_eus.dir/all: turtlebot3_bringup/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_eus.dir/all: turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Feedback.dir/all
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_eus.dir/all: turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Result.dir/all
@@ -2117,7 +2611,7 @@ turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_eus.dir/all: 
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_eus.dir/all: turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Action.dir/all
 	$(MAKE) -f turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_eus.dir/build.make turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_eus.dir/depend
 	$(MAKE) -f turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_eus.dir/build.make turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=22,23,24,25,26,27,28,29 "Built target turtlebot3_example_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=40,41,42,43,44,45,46,47 "Built target turtlebot3_example_generate_messages_eus"
 .PHONY : turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2195,7 +2689,7 @@ turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_T
 # Target rules for target turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_lisp.dir
 
 # All Build rule for target.
-turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_lisp.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_lisp.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_lisp.dir/all: turtlebot3_bringup/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_lisp.dir/all: turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Feedback.dir/all
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_lisp.dir/all: turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Result.dir/all
@@ -2207,7 +2701,7 @@ turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_lisp.dir/all:
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_lisp.dir/all: turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Action.dir/all
 	$(MAKE) -f turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_lisp.dir/build.make turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_lisp.dir/depend
 	$(MAKE) -f turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_lisp.dir/build.make turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=30,31,32,33,34,35,36 "Built target turtlebot3_example_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=48,49,50,51,52,53,54 "Built target turtlebot3_example_generate_messages_lisp"
 .PHONY : turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2366,7 +2860,7 @@ turtlebot3_example/CMakeFiles/turtlebot3_example_genlisp.dir/clean:
 # Target rules for target turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_cpp.dir
 
 # All Build rule for target.
-turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_cpp.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_cpp.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_cpp.dir/all: turtlebot3_bringup/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_cpp.dir/all: turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Feedback.dir/all
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_cpp.dir/all: turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Result.dir/all
@@ -2378,7 +2872,7 @@ turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_cpp.dir/all: 
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_cpp.dir/all: turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Action.dir/all
 	$(MAKE) -f turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_cpp.dir/build.make turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_cpp.dir/depend
 	$(MAKE) -f turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_cpp.dir/build.make turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=15,16,17,18,19,20,21 "Built target turtlebot3_example_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=33,34,35,36,37,38,39 "Built target turtlebot3_example_generate_messages_cpp"
 .PHONY : turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2510,7 +3004,7 @@ turtlebot3_example/CMakeFiles/nav_msgs_generate_messages_py.dir/clean:
 # Target rules for target turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_py.dir
 
 # All Build rule for target.
-turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_py.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
+turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_py.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_py.dir/all: turtlebot3_bringup/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_py.dir/all: turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Feedback.dir/all
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_py.dir/all: turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Result.dir/all
@@ -2522,7 +3016,7 @@ turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_py.dir/all: t
 turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_py.dir/all: turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Action.dir/all
 	$(MAKE) -f turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_py.dir/build.make turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_py.dir/depend
 	$(MAKE) -f turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_py.dir/build.make turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=44,45,46,47,48,49,50,51 "Built target turtlebot3_example_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=62,63,64,65,66,67,68,69 "Built target turtlebot3_example_generate_messages_py"
 .PHONY : turtlebot3_example/CMakeFiles/turtlebot3_example_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3306,16 +3800,16 @@ turtlebot3_simulations/turtlebot3_fake/CMakeFiles/tf_generate_messages_lisp.dir/
 # Target rules for target turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir
 
 # All Build rule for target.
-turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all
-turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all
-turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all
-turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
-turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all
-turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
 turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_cpp.dir/all
-turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs.dir/all
+turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py.dir/all
+turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_eus.dir/all
+turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp.dir/all
 turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_bringup/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_bringup/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_bringup/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
@@ -3363,7 +3857,7 @@ turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: 
 turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all: turtlebot3_simulations/turtlebot3_fake/CMakeFiles/tf_generate_messages_cpp.dir/all
 	$(MAKE) -f turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/build.make turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/depend
 	$(MAKE) -f turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/build.make turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=52,53 "Built target turtlebot3_fake_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=70,71 "Built target turtlebot3_fake_node"
 .PHONY : turtlebot3_simulations/turtlebot3_fake/CMakeFiles/turtlebot3_fake_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3900,11 +4394,11 @@ turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/trajectory_msgs_generate_mes
 # Target rules for target turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir
 
 # All Build rule for target.
-turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
-turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
 turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all: turtlebot3_bringup/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all: turtlebot3_bringup/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all: turtlebot3_bringup/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
@@ -3974,7 +4468,7 @@ turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all: tu
 turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all: turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/build.make turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/depend
 	$(MAKE) -f turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/build.make turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=13,14 "Built target turtlebot3_drive"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/build/CMakeFiles --progress-num=31,32 "Built target turtlebot3_drive"
 .PHONY : turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4133,11 +4627,11 @@ turtlebot3_simulations/turtlebot3_gazebo/CMakeFiles/gazebo_msgs_generate_message
 # Target rules for target turtlebot3_slam/CMakeFiles/flat_world_imu_node.dir
 
 # All Build rule for target.
-turtlebot3_slam/CMakeFiles/flat_world_imu_node.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-turtlebot3_slam/CMakeFiles/flat_world_imu_node.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-turtlebot3_slam/CMakeFiles/flat_world_imu_node.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
-turtlebot3_slam/CMakeFiles/flat_world_imu_node.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-turtlebot3_slam/CMakeFiles/flat_world_imu_node.dir/all: turtlebot3_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+turtlebot3_slam/CMakeFiles/flat_world_imu_node.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+turtlebot3_slam/CMakeFiles/flat_world_imu_node.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+turtlebot3_slam/CMakeFiles/flat_world_imu_node.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+turtlebot3_slam/CMakeFiles/flat_world_imu_node.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+turtlebot3_slam/CMakeFiles/flat_world_imu_node.dir/all: speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
 turtlebot3_slam/CMakeFiles/flat_world_imu_node.dir/all: turtlebot3_bringup/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
 turtlebot3_slam/CMakeFiles/flat_world_imu_node.dir/all: turtlebot3_bringup/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 turtlebot3_slam/CMakeFiles/flat_world_imu_node.dir/all: turtlebot3_bringup/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all

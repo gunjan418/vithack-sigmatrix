@@ -1,0 +1,7 @@
+set(hlpr_speech_recognition_SETUP_PY_SETUP_MODULE "distutils.core")
+set(hlpr_speech_recognition_SETUP_PY_VERSION "0.0.0")
+set(hlpr_speech_recognition_SETUP_PY_SCRIPTS "")
+set(hlpr_speech_recognition_SETUP_PY_PACKAGES "hlpr_speech_recognition")
+set(hlpr_speech_recognition_SETUP_PY_PACKAGE_DIRS "src/hlpr_speech_recognition")
+set(hlpr_speech_recognition_SETUP_PY_MODULES "")
+set(hlpr_speech_recognition_SETUP_PY_MODULE_DIRS "")

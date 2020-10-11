@@ -1,0 +1,7 @@
+Test: test-lm
+run PASSED
+INFO: batch.c(779): AVERAGE 0.19 xRT (CPU), 0.19 xRT (elapsed)
+The encoding pragma is no longer supported. Check cperl at ../../test/word_align.pl line 14.
+BEGIN failed--compilation aborted at ../../test/word_align.pl line 14.
+match PASSED
+All sub-tests passed

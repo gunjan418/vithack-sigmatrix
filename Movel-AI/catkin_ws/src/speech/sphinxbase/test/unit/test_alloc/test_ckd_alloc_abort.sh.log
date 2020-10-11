@@ -1,0 +1,4 @@
+calloc(-1,-1) failed from test_ckd_alloc_abort.c(15)
+Aborted (core dumped)
+expected_failure PASSED
+All sub-tests passed

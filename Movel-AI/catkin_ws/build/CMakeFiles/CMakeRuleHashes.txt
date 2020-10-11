@@ -1,4 +1,7 @@
 # Hashes of file build rules.
+9dc76e84e843c9cd96ae458276c81a3c /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/include/hlpr_speech_msgs/SpeechCommand.h
+c49952fe7dc126c7b5dffbb422dfde6c /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/include/hlpr_speech_msgs/SpeechService.h
+af0ac71ac50211952d6fc2ee92cbbfa7 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/include/hlpr_speech_msgs/StampedString.h
 cf10254a1bc049873d5b6a26d6f241ef /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/include/turtlebot3_example/Turtlebot3Action.h
 f94be9ec51bb568493d76b0a6f5af668 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/include/turtlebot3_example/Turtlebot3ActionFeedback.h
 d1284cdbd22df85af4956ecb24f6ebbd /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/include/turtlebot3_example/Turtlebot3ActionGoal.h
@@ -9,6 +12,11 @@ e454c3b37951a57fd039a8e7aaf5878f /home/gunjan/Desktop/VITHack/vithack-sigmatix/M
 b789425573437f12902e508d98b554d9 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/include/turtlebot3_msgs/SensorState.h
 cbdcbe4b5d2be1dfeee05c0ed521c2a7 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/include/turtlebot3_msgs/Sound.h
 49bdbf2c2346499e710624e2acd934a3 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/include/turtlebot3_msgs/VersionInfo.h
+2651548e986c3f802c96be55fc3653c9 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/lib/python3/dist-packages/hlpr_speech_msgs/msg/_SpeechCommand.py
+342dc3bd3aa8e825cef6128efe7d3822 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/lib/python3/dist-packages/hlpr_speech_msgs/msg/_StampedString.py
+d6721017eb81404021359a64df2cfd05 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/lib/python3/dist-packages/hlpr_speech_msgs/msg/__init__.py
+99d2db5702e6cd19e2b76e1efa085d67 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/lib/python3/dist-packages/hlpr_speech_msgs/srv/_SpeechService.py
+8a1a9d1901913def408051c8c9ff9ff2 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/lib/python3/dist-packages/hlpr_speech_msgs/srv/__init__.py
 eb8ffbdafec5286ce415e82b3529fae6 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3Action.py
 a1e4a5557197601a61c79e9d5f7b1a84 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionFeedback.py
 2a3cd3f5c4871257be79d66950915525 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/lib/python3/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionGoal.py
@@ -21,6 +29,9 @@ f2f945adc60c58ecf30588d734afe5e3 /home/gunjan/Desktop/VITHack/vithack-sigmatix/M
 883b8ce0f30c19b59f1e8e32faebe6ad /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/lib/python3/dist-packages/turtlebot3_msgs/msg/_Sound.py
 6199b63d9f486a3dd3c7e9d2d6ee773e /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/lib/python3/dist-packages/turtlebot3_msgs/msg/_VersionInfo.py
 481a5fc5ba26094f489709da2b5dd651 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/lib/python3/dist-packages/turtlebot3_msgs/msg/__init__.py
+939b545d779ea2f86c05f39121cf527b /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/common-lisp/ros/hlpr_speech_msgs/msg/SpeechCommand.lisp
+8447da4ac70ffff412ce67fb5442e8dd /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/common-lisp/ros/hlpr_speech_msgs/msg/StampedString.lisp
+62447f3793bea1ec36e574ab4b1bc4ae /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/common-lisp/ros/hlpr_speech_msgs/srv/SpeechService.lisp
 bc3a9ab548f142b9121db1c44bd438bd /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3Action.lisp
 fedcadd414eabb003c5ea6179afb6211 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3ActionFeedback.lisp
 1f2172952dc235e8df6e555e52a626cc /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/common-lisp/ros/turtlebot3_example/msg/Turtlebot3ActionGoal.lisp
@@ -31,6 +42,9 @@ b65b72975f537d9a4ea2cbcb9b1eea59 /home/gunjan/Desktop/VITHack/vithack-sigmatix/M
 8815610caa6756563b8fb65075022a5a /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/common-lisp/ros/turtlebot3_msgs/msg/SensorState.lisp
 e7ffc70493349301f5540a76379b434c /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/common-lisp/ros/turtlebot3_msgs/msg/Sound.lisp
 6d232d7a28715d2539854b33e876f6c0 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/common-lisp/ros/turtlebot3_msgs/msg/VersionInfo.lisp
+061c68c546314a02434157d63e4592c3 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/gennodejs/ros/hlpr_speech_msgs/msg/SpeechCommand.js
+5ee5c3e857ee03289676d69395a9aab5 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/gennodejs/ros/hlpr_speech_msgs/msg/StampedString.js
+f7621d2179272e0995c7b13c312cb5d8 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/gennodejs/ros/hlpr_speech_msgs/srv/SpeechService.js
 20da93438c7e903bef8199ddfefa82fc /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3Action.js
 8a0e0b8c02cce2f1d8ace4f53197a064 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3ActionFeedback.js
 9a0fc2d29a407e073d0db4583bcc008c /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/gennodejs/ros/turtlebot3_example/msg/Turtlebot3ActionGoal.js
@@ -41,6 +55,10 @@ ca41e68332ed6493b04e2f688f013f23 /home/gunjan/Desktop/VITHack/vithack-sigmatix/M
 e1329235767a84cb50a24844525ca307 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/gennodejs/ros/turtlebot3_msgs/msg/SensorState.js
 c835ebf61a81238760a2cdc602be5a69 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/gennodejs/ros/turtlebot3_msgs/msg/Sound.js
 149ad7704a5b0407793f372a9def1a3f /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/gennodejs/ros/turtlebot3_msgs/msg/VersionInfo.js
+18bda496c2855c1d15d4ce060a6e0aa5 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/roseus/ros/hlpr_speech_msgs/manifest.l
+477d7eb395439c1faccb31c7b1b10ec3 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/roseus/ros/hlpr_speech_msgs/msg/SpeechCommand.l
+98eaf1685e7e148d94726156c056e9b1 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/roseus/ros/hlpr_speech_msgs/msg/StampedString.l
+0bc4d0499c435c2d19853a6750b84dd3 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/roseus/ros/hlpr_speech_msgs/srv/SpeechService.l
 f0b90539eee02468c66cbc958ff374bc /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/roseus/ros/turtlebot3_example/manifest.l
 c5e20a6e257cf7268755a4d0d83d225c /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3Action.l
 2c1c5f58da7f13d16472d9286719de4a /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/roseus/ros/turtlebot3_example/msg/Turtlebot3ActionFeedback.l
@@ -54,10 +72,18 @@ bca997a0f87079f16604dc65a20a2500 /home/gunjan/Desktop/VITHack/vithack-sigmatix/M
 ef856f2c813e9f031401cbdc38ca1817 /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/roseus/ros/turtlebot3_msgs/msg/Sound.l
 363a1e48f5e9eea539b594b86a5e52ad /home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/share/roseus/ros/turtlebot3_msgs/msg/VersionInfo.l
 ed7667c9625cb713d380b396cf532f92 CMakeFiles/clean_test_results
-d4931a1106cb681e4d95bef6dced6cae turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Action
-dc0141d495a66eecaae716047fc7801f turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3ActionFeedback
-b541ff9026681de9b39e957612bb440b turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3ActionGoal
-a0c88d1c9fe4153d215a1131919476ca turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3ActionResult
+3d98ccb845472ae6ef0f7d70cec139dd speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechCommand
+911c7d1be2e4464dfff4b517adf4ead2 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_SpeechService
+15248a9baecb9835b3b46f152fd4f643 speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/_hlpr_speech_msgs_generate_messages_check_deps_StampedString
+522c47dba4c0307848eba4d9e2f03a3d speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_cpp
+522c47dba4c0307848eba4d9e2f03a3d speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_eus
+522c47dba4c0307848eba4d9e2f03a3d speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_lisp
+522c47dba4c0307848eba4d9e2f03a3d speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_nodejs
+522c47dba4c0307848eba4d9e2f03a3d speech/hlpr_speech/hlpr_speech_msgs/CMakeFiles/hlpr_speech_msgs_generate_messages_py
+b2ca18089a185aaa6e895d711c9137a4 turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Action
+173647354e6d81664b242e6b3e337a59 turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3ActionFeedback
+29fa90769b675e8e60b666d509e8c3e6 turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3ActionGoal
+4daa22daba564b284bb03637ac8ef54b turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3ActionResult
 3e5aca0a208d3af43a4b9b3467f86791 turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Feedback
 094b9700460bd5848059ace977771aec turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Goal
 09a1b5f8ea576e3ead3e2531498c64e0 turtlebot3_example/CMakeFiles/_turtlebot3_example_generate_messages_check_deps_Turtlebot3Result

@@ -1,0 +1,8 @@
+prefix=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel
+
+Name: hlpr_speech_msgs
+Description: Description of hlpr_speech_msgs
+Version: 0.0.0
+Cflags: -I/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs

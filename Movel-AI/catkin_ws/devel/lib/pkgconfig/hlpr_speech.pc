@@ -1,0 +1,8 @@
+prefix=/home/gunjan/Desktop/VITHack/vithack-sigmatix/Movel-AI/catkin_ws/devel
+
+Name: hlpr_speech
+Description: Description of hlpr_speech
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
