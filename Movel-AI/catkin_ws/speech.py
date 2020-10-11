@@ -33,13 +33,16 @@ try:
                    
                 if(command=="go to kitchen"):
                  _runCommand("kitchen.py")
-                elif(command=="go to room one"):
+                elif(command=="go to room 1"):
                  _runCommand("room1.py")
-                elif(command=="go to room two"):
+                elif(command=="go to room 2"):
                  _runCommand("room2.py")
+                 elif(command=="go to charge"):
+                 _runCommand("charge.py")
         except sr.UnknownValueError:
             print("Oops! Didn't catch that")
         except sr.RequestError as e:
             print("Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
 except KeyboardInterrupt:
     pass
+
